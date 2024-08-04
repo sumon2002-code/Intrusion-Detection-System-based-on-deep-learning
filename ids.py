@@ -297,8 +297,8 @@ def runIDS():
             y_pred_new = np.argmax(y_pred_new, axis=1)
 
             # Ánh xạ các giá trị mã hóa nhãn về tên nhãn gốc
-            label_mapping = {0: 'BENIGN', 1: 'Bot', 2: 'PortScan', 3: 'DDoS', 4: 'DoS Attack', 
-                            5: 'Brute Force', 6: 'Web Attack'}
+            label_mapping = {0: 'BENIGN', 1: 'Bot', 2: 'Brute Force', 3: 'DDoS', 4: 'DoS Attack', 
+                            5: 'PortScan', 6: 'Web Attack'}
 
             # Chuyển mã hóa nhãn thành tên nhãn
             predicted_labels = [label_mapping[label] for label in y_pred_new]
