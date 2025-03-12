@@ -30,9 +30,9 @@ COLUMN_NAMES = [
     "Active Min", "Idle Mean", "Idle Std", "Idle Max", "Idle Min", "Label"
 ]
 def send_email_alert(subject, body):
-    sender_email = "thinhvipbr3@@gmail.com"
-    receiver_email = "hoangh2002@gmail.com"
-    password = "xsnxsdvtludcchlu"
+    sender_email = ""
+    receiver_email = ""
+    password = ""
 
     message = MIMEMultipart()
     message["From"] = sender_email
